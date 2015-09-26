@@ -1,0 +1,20 @@
+
+
+<div class="row">
+	<div class="col-md-6 col-md-offset-1">
+		<div class="well">
+			<h1>Look up your local forecast</h1>
+			<p>What's the weather like in your city?</P>
+
+				<div>
+						<%= form_tag weather_path do %>
+						<%= text_field_tag :city, nil, placeholder: "City Name" %><br>
+						<%= select_tag :state, options_for_select(@states), :prompt => "Please select a state" %><br>
+						<%= submit_tag "Check Weather" %>
+						<% end %>
+					</div>
+				</div>
+			</div>
+
+
+
